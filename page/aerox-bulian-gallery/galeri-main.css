@@ -1,0 +1,185 @@
+@keyframes galeriText {
+
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 27%;
+    }
+    
+}
+
+@keyframes cursorTyping {
+    0%{
+        opacity: 0;
+    }
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cursorMove {
+    0% {
+        left: 6.4%;
+    }
+    100% {
+        left: 30.3%;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+#colorDark.color-dark-gll {
+    color: darkgray !important;
+}a.active-gll{
+    color: black !important;
+}#colorDark.activeDarkGll {
+    color: white !important;
+}#colorDark.color-dark-gll:hover {
+    color: white !important;
+}
+
+.section-1 {
+    margin-top: 50px;
+    padding-bottom: 48px;
+}
+
+.section-1 .judul-galeri {
+    margin-top: 4%;
+}
+
+.section-1 .judul-galeri h1 {
+    font-size: 3.25rem;
+    text-decoration: underline;
+}
+
+h1.selection::selection {
+    background-color: blue;
+    color: white;
+}
+
+/* Galeri Header */
+section.galeri-header {
+    position: relative;
+}
+
+section.galeri-header h1.typingAnimate {
+    font-size: 5rem;
+    color: white;
+    margin: 0;
+    overflow: hidden;
+    animation-name: galeriText;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1.3s;
+    animation-fill-mode: backwards;
+}
+
+section.galeri-header h1.typingAnimate::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: 19%;
+    animation-name: cursorTyping, cursorMove;
+    animation-duration: .7s, 6s;
+    animation-timing-function: ease ,ease-in-out;
+    animation-iteration-count: 16, 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s, 1.3s;
+}
+
+/* Galeri Img */
+.galeri-grid-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.galeri-grid-container .img-wrapper {
+    align-self: center;
+}
+
+.galeri-grid-container .img-wrapper .img {
+    overflow: hidden;
+}
+
+.galeri-grid-container .img-wrapper img {
+    width: 100%;
+    transition: .3s;
+    transform: perspective(800px) translate3d(0px, 0, 50px);
+}
+
+.galeri-grid-container .img-wrapper img:hover {
+    transform: perspective(800px) translate3d(0px, 0, 80px);
+}
+
+.galeri-grid-content {
+    width: 80%;
+    height: 1120px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+    row-gap: 20px;
+    overflow: hidden;
+    transition: all 2.5s ease;
+}
+
+/* Grid Javascript untuk memuat semua gambar yg ada di Grid */
+.galeri-grid-content.open {
+    height: 4150.5px;
+}
+
+/* Button */
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.button-wrapper .button {
+    padding: 20px 55px 21px 54px;
+    border: none;
+    background-color: rgb(138,43,226);
+    color: white;
+    text-transform: uppercase;
+    margin-top: 48px;
+    transition: all .6s ease;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    letter-spacing: 1px;
+}
+
+.button:hover, .button:active {
+    background-color: rgba(138,43,226, 0.8);
+    transform: perspective(1000px) translate3d(-0px, -5px, 10px);
+    box-shadow: 0px 8px 15px rgba(138, 43, 226, .4);
+    letter-spacing: 2.5px;
+}
+
+/* Sosmed Wrapper */
+.sosmed-wrapper {
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.sosmed-wrapper .instagram-sosmed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sosmed-wrapper .instagram-sosmed span {
+    font-size: 14px;
+}
+
+.sosmed-wrapper #insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

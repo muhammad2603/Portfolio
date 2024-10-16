@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Adsense From Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8400788184089410"
+     crossorigin="anonymous"></script>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Fattahillah Portfolio Website">
+    <meta name="description" content="Website yang bertujuan untuk pembelajaran seseorang yang bernama Muhammad Fattahillah">
+    <meta name="keyword" content="Fattahillah Portofolio, Fattahillah Portofolio, Fattahillah Folio, Website Portfolio, Website Portofolio, Website Folio, Muhammad Fattahillah, Fattahillah, Tentang Muhammad Fattahillah, Front-End Developer, Front End Developer, fattahillah portofolio, fattahillah portofolio, fattahillah folio, website portfolio, website portofolio, website folio, muhammad fattahillah, fattahillah, tentang muhammad fattahillah, front-end developer, front end developer">
+
+    <!-- Meta OG / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fattahillah-folio.web.id">
+    <meta property="og:title" content="Fattahillah Portfolio Website">
+    <meta property="description" content="Website yang bertujuan untuk pembelajaran seseorang yang bernama Muhammad Fattahillah">
+    <meta property="og:image" content="img/nav-brand.jpeg">
+
+    <!-- Meta Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fattahillah-folio.web.id">
+    <meta property="twitter:title" content="Fattahillah Folio">
+    <meta property="twitter:description" content="Website yang bertujuan untuk pembelajaran seseorang yang bernama Muhammad Fattahillah">
+    <meta property="twitter:image" content="img/nav-brand.jpeg">
+
+    <!-- Title -->
+    <title>Fattahillah Folio</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/nav-brand.jpeg" sizes="16x16">
+    <link rel="icon" href="img/nav-brand.jpeg" sizes="32x32">
+    <link rel="icon" href="img/nav-brand.jpeg" sizes="180x180">
+    <link rel="import" href="index.html" async>
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Preload -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="css/bootstrap.min.css" as="style">
+    <link rel="preload" href="css/main.css" as="style">
+    <link rel="preload" href="img/img-1.jpg" as="image">
+    <link rel="preload" href="img/img-2.jpg" as="image">
+    <link rel="preload" href="img/muhammad-fattahillah.jpeg" as="image">
+    <link rel="preload" href="img/img-4.jpg" as="image">
+    <link rel="preload" href="img/img-5.jpeg" as="image">
+    <link rel="preload" href="img/img-6.jpeg" as="image">
+    <link rel="preload" href="img/img-7.jpeg" as="image">
+    <link rel="preload" href="img/img-8.jpeg" as="image">
+    <link rel="preload" href="img/img-9.jpeg" as="image">
+    <link rel="preload" href="img/img-10.jpeg" as="image">
+    <link rel="preload" href="img/img-11.jpeg" as="image">
+    <link rel="preload" href="img/nav-brand.jpeg" as="image">
+
+    <!-- CDNS CSS Font Awesome -->
+    <script src="https://kit.fontawesome.com/37a9127a04.js" crossorigin="anonymous" async></script>
+
+    <!-- Script Alert -->
+    <script>
+        if (!localStorage.getItem('alertShown')) {
+
+            alert('Website ini dibuat hanya untuk bahan pembelajaran saya saja🙏, bukan untuk dijadikan hal kesombongan atau semacamnya, Terima Kasih.');
+
+            localStorage.setItem('alertShown', 'true');
+
+        }
+    </script>
+
+</head>
+<body>
+    
+    <!-- Container Navigasi -->
+    <div class="container-fluid navigasi-wrapper" id="navigasiWrapper">
+
+        <!-- Navigasi -->
+        <nav>
+
+            <!-- Brand Nav -->
+            <div class="brand-wrapper" id="logoNone">
+                <div class="brand">
+                    <img src="img/nav-brand.jpeg" alt="Logo" title="Logo" class="brand-nav img-fluid">
+                </div>
+            </div>
+            <!-- Akhir Brand Nav -->
+
+            <!-- Menu Navigasi -->
+            <div class="menu-navigasi">
+
+                <!-- Navigasi Tablet/Desktop -->
+                <ul class="navigasi-list" id="navigasiList">
+                    <li><a href="#" class="active removeActive" id="colorDark">Home</a></li>
+                    <li><a id="colorDark" class="aboutActive" onclick="scrollToAbout()" style="cursor: pointer;">About</a></li>
+                    <li id="eventDropdown" class="link-pseudo" style="cursor: pointer;">
+                        <a href="#" style="cursor: pointer;" class="link-pseudo text-color galleryLink" id="colorDark">Gallery <i class="fa-solid fa-chevron-down" id="iconColor" style="font-size: 80%;"></i></a>
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <ul class="menu">
+                                <li><a href="#" id="colorDark">My Photo Album</a></li>
+                                <li><a href="#" id="colorDark">Aerox Bulian Album</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#" id="colorDark" class="galleryLink projectActive" onclick="scrollToProject()">Project</a></li>
+                    <script src="js/dropdown.js"></script>
+                </ul>
+                <!-- Akhir Navigasi Tablet/Desktop -->
+
+            </div>
+            <!-- Akhir Menu Navigasi -->
+
+            <!-- Toggle Menu -->
+            <div class="button-wrapper">
+                <button class="toggle-mobile" id="toggleMobile"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <!-- Akhir Toggle Menu -->
+
+            <!-- Toggle Dark -->
+            <div class="dark-toggle" id="darkToggle">
+                <button class="button-toggle btn" id="buttonToggle" style="font-size: 1.4rem; height: 100%; width: 100%;">
+                    <i class="fa-regular fa-sun" id="sun" style="display: block;"></i>
+                    <i class="fa-solid fa-moon" id="moon" style="display: none;"></i>
+                </button>
+            </div>
+            <script src="js/dark-mode.js"></script>
+            <!-- Akhir Toggle Dark -->
+
+        </nav>
+        <!-- Akhir Navigasi -->
+
+        <script src="js/nav.js"></script>
+
+    </div>
+    <!-- Akhir Container Navigasi -->
+
+    <!-- Navigasi Mobile -->
+    <div class="menu-toggle" id="menuToggle">
+        <div class="btn-close-wrapper">
+            <button class="close" id="toggleClose"><i class="fa-sharp fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="menu-wrapper">
+            <ul class="navigasi-list">
+                <li><a href="index.html" id="colorDark" class="active">Home</a></li>
+                <li><a href="#" id="colorDark" class="scrollToAbout" onclick="scrollToAboutMobile()">About</a></li>
+                <li style="cursor: pointer;">
+                    <div class="list-wrapper d-flex justify-content-between"  id="dropdownMbl">
+                        <a href="#" id="linkColor">Gallery</a>
+                        <i class="fa-solid fa-chevron-down" id="iconColor" style="transition: all .3s ease; font-size: 80%; cursor: pointer; line-height: 35px; color: #55595c;"></i>
+                    </div>
+                    <div class="menu-dropdown-mbl" id="menuDropdownMbl">
+                        <ul class="menu" style="padding-left: 1rem;">
+                            <li><a href="#">My Photo Album</a></li>
+                            <li><a href="#">Aerox Bulian Album</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <script src="js/mobile-dropdown.js"></script>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/toggle-nav.js"></script>
+    <!-- Akhir Navigasi Mobile -->
+
+    
+    <div class="container-fluid" id="contentWrapper">
+
+        <!-- Section 1 -->
+        <section class="section-1">
+
+            <div class="row">
+
+                <div class="col-md-5">
+                    <img src="img/img-1.jpg" alt="Coding Image" title="Source By Google" class="img-fluid float-start" width="500px"/>
+                </div>
+
+                <div class="col-md-7">
+                    <h1 class="section-1-h1 mt-2">
+                        Website
+                        <br>
+                        <span class="indent-section-1">Creator</span>
+                    </h1>
+                </div>
+
+            </div>
+
+            <div class="row mt-2">
+
+                <div class="col-md-5">
+                    <img src="img/img-2.jpg" alt="Coding Image" title="Source By Google" class="img-fluid float-start" width="500px" />
+                </div>
+
+                <div class="col-md-7 paragraf-wrapper d-flex justify-content-between">
+                    <div class="paragraf-1 align-self-end">
+                        <p>Muhammad Fattahillah<br> Front-End Dev</p>
+                    </div>
+                    <div class="paragraf-2 align-self-end" style="display: none;">
+                        <u><p>mari bekerja bersama</p></u>
+                    </div>
+                </div>
+
+            </div>
+
+        </section> 
+        <!-- Akhir Section 1 -->
+
+        <!-- Section 2 -->
+        <div class="section-2 mt-5">
+
+            <div class="row">
+
+                <div class="col-md-5">
+                    <img src="img/muhammad-fattahillah.jpeg" alt="Coding Image" title="My Photo" class="img-fluid float-start" width="500px">
+                </div>
+
+                <div class="col-md-7 mt-2 d-flex section-2-content">
+
+                    <div class="section-2-h2-wrapper">
+                        <h2 class="mt-2">
+                            tentang
+                            <br>
+                            saya
+                        </h2>
+                    </div>
+                    
+                    <div class="section-2-paragraf-wrapper mt-3">
+                        <p>
+                            Front End adalah suatu hal yang tidak dibuat dengan merancang desain dari suatu situs ataupun aplikasi dari nol.
+                            Karena, pada dasarnya hal tersebut sudah dikerjakan oleh UI Designer. Tugas Front End adalah memindahkan desain
+                            yang dibuat oleh UI Designer dalam bentuk yang lebih interaktif dan membuat desain tersebut menjadi lebih hidup.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Akhir Section 2 -->
+
+
+        <!-- Section 3 -->
+        <div class="section-3 mt-5">
+            <div class="row">
+
+                <div class="col-md-7">
+
+                    <h2>karya sebelumnya</h2>
+
+                    <img src="img/img-4.jpg" alt="Coding Image" title="Source By Google" class="img-fluid float-start mt-5">
+                    <p>2019 - Coding 1</p>
+
+                </div>
+
+                <div class="col-md-5 mt-4">
+
+                    <img src="img/img-5.jpeg" alt="Coding Image" title="Source By Google" class="image-5 img-fluid float-start">
+                    <p>2020 - Coding 2</p>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Akhir Section 3 -->
+
+        <!-- Section 4 -->
+        <div class="section-4">
+            <div class="row">
+
+                <div class="col-md-7">
+
+                    <div class="section-4-image">
+                        
+                        <!-- Image 1 on Section-4 -->
+                        <div class="image-1-section-4-wrapper">
+                            <img src="img/img-6.jpeg" alt="Coding Image" title="Source By Google" class="img-fluid mx-3" width="350px" />
+                            <p>
+                                2021 - <br> Coding 3
+                            </p>
+                        </div>
+                        <!-- Akhir Image 1 -->
+
+                        <!-- Image 2 on Section 4 -->
+                        <div class="image-2-section-4-wrapper">
+                            <img src="img/img-7.jpeg" alt="Coding Image" title="Source By Google" class="img-fluid mt-4" />
+                            <p class="mt-1">
+                                2022 - Coding 4
+                            </p>
+                        </div>
+                        <!-- Akhir Image 2 -->
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-5">
+
+                    <!-- Image 3 On Section 4 -->
+                    <div class="image-3-section-4-wrapper float-end">
+
+                        <img src="img/img-8.jpeg" alt="Coding Image" title="Source By Google" class="img-fluid" />
+                        <p class="mt-1">
+                            2023 - Coding 5
+                        </p>
+
+                    </div>
+                    <!-- Akhir Image 3 -->
+                    
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Akhir Section 4 -->
+
+        <!-- Section 5 -->
+        <div class="section-5 mt-4">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <h1>
+                        "Hobi adalah ladang kreativitas yang tak terbatas, biarkan imajinasimu menjelajah dan menciptakan keajaiban." - Maya Angelou
+                    </h1>
+                </div>
+
+                <div class="col-md-6">
+                    
+                    <div class="image-section-4-wrapper">
+                        <img src="img/img-9.jpeg" alt="Coding Image" title="Source By Google" class="img-fluid" />
+                        <p class="mt-1">
+                            2024 - Coding 6
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- Akhir Section 5 -->
+
+        <!-- Section 6 -->
+        <div class="section-6 mt-5">
+            <div class="row">
+
+                <div class="col-md-5">
+                    <img src="img/img-10.jpeg" alt="My Photo" title="My Photo" class="img-fluid" />
+                </div>
+
+                <div class="col-md-7">
+                    
+                    <div class="text-1-section-6-wrapper">
+                        
+                        <h1>Pengalaman</h1>
+                        
+                        <div class="column-1">
+                            <p>
+                                <span class="bold-mobile">Kantor DPRD</span>
+                                <br>
+                                <span>2023-Sekarang, DPRD Muara Bulian</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="text-2-section-6-wrapper">
+                        
+                        <h1>Pendidikan</h1>
+
+                        <div class="column-1">
+                            <p>
+                                Siswa SMK Kosgoro
+                                <br>
+                                <span>2020-2023, SMK Kosgoro Muara Bulian</span>
+                             </p>
+                        </div>
+
+                    </div>
+                
+                </div>
+
+            </div>
+        </div>
+        <!-- Akhir Section 6 -->
+
+        
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <div class="row">
+
+            <div class="col-md-6 footer-wrapper">
+                <div class="header-footer">
+
+                        <p>
+                            Muhammad Fattahillah
+                        </p>
+
+                        <h1>hubungi<br>saya</h1>
+                </div>
+
+                <div class="footer-footer">
+
+                    <!-- Caption Footer Wrapper -->
+                    <div class="footer-caption-wrapper">
+
+                        <!-- Caption 1 -->
+                        <div class="caption-1">
+                            <p>
+                            <span>Email:</span>
+                            <br>
+                            admin@fattahillah-folio.web.id
+                            </p>
+                        </div>
+                        <!-- Akhir Caprion 1 -->
+
+                        <!-- Caption 2 -->
+                        <div class="caption-2">
+                            <p>
+                            <span>Lokasi:</span>
+                            <br>
+                            Jl. Buru No. 52, Perumnas, Muara<br>Bulian, Batanghari, Jambi. 
+                            </p>
+                        </div>
+                        <!-- Akhir Caption 2 -->
+
+                        <!-- Caption 3 -->
+                        <div class="caption-3">
+                            <a href="../privacy-policy/privacy-policy.html" style="text-decoration: underline !important">Privacy Policy</a>
+                        </div>
+                        <!-- Akhir Caption 3 -->
+
+                    </div>
+                    <!-- Akhir Caption Footer Wrapper -->
+
+                </div>
+            </div>
+
+            <div class="col-md-5 offset-md-1">
+                <img src="img/img-11.jpeg" alt="Coding Image" title="Source By Google" class="img-fluid" />
+            </div>
+
+        </div>
+    </div>
+    <!-- Akhir Footer -->
+
+    <!--------------------------------------------------------------------------------->
+
+    <!-- ScrollToAbout -->
+    <script>
+
+        // Prevent Default for Link
+        const galleryLink = document.querySelectorAll("#navigasiList li .galleryLink");
+
+        galleryLink.forEach(element => {
+            element.addEventListener('click', function(e) {
+                e.preventDefault();
+            })
+        })
+
+        window.addEventListener('load', function() {
+            window.scrollTo(0,0);
+        });
+
+        buttonToggle = document.getElementById("buttonToggle");
+
+        buttonToggle.addEventListener('click', () => {
+            window.addEventListener("scroll", function() {
+            const windowY = window.scrollY;
+            const elementId = [
+                document.querySelector("#navigasiList li .aboutActive"),
+                document.querySelector("#navigasiList li .projectActive"),
+                document.getElementById("colorDark"),
+            ];
+
+            if(windowY >= 675 && windowY < 1233) {
+                
+            }else if(windowY >= 1236 && windowY < 2689){
+                
+            }else {
+                
+            }
+        })
+        })
+
+        // Logika saat Scroll ke Section About, About akan membuat warna text menjadi hitam/active
+        window.addEventListener("scroll", function() {
+            const windowY = window.scrollY;
+            const elementId = [
+                document.querySelector("#navigasiList li .aboutActive"),
+                document.querySelector("#navigasiList li .projectActive"),
+                document.getElementById("colorDark"),
+            ];
+
+            if(windowY >= 675 && windowY < 1233) {
+                elementId[0].style.color = "black";
+                elementId[2].classList.remove("active");
+            }else if(windowY >= 1236 && windowY < 2689){
+                elementId[1].style.color = "black";
+                elementId[2].classList.remove("active");
+            }else {
+                elementId[0].style.color = "";
+                elementId[1].style.color = "";
+                elementId[2].classList.add("active");
+            }
+        })
+
+        // window.addEventListener('scroll', () => {
+        //     const windowY = window.scrollY;
+        //     const project = document.querySelector("#navigasiList li .projectActive");
+        //     const removeActive = document.getElementById("colorDark");
+        //     if(windowY >= 1236 && windowY < 2689) {
+        //         project.style.color = "black";
+        //         removeActive.classList.remove("active");
+        //     }else {
+        //         project.style.color = "";
+        //         removeActive.classList.add("active");
+        //     }
+        // })
+
+        // Fungsi Scroll Window ke Section About saat diklik
+        function scrollToAbout() {
+            window.scrollTo(0,675);
+        }
+
+        // Fungsi Scroll Window ke Section About saat diklik (Saat Mode Tablet/Smartphone View)
+        function scrollToAboutMobile() {
+            window.scrollTo(0,912);
+        }
+
+        // Fungsi Scroll Window ke Section About saat diklik
+        function scrollToProject() {
+            window.scrollTo(0,1236);
+        }
+
+    </script>
+        
+    
+    
+</body>
+</html>
